@@ -1,85 +1,85 @@
-<h1 align="center">Welcome to sg-exam 👋</h1> <p> <img alt="Version" src="https://img.shields.io/badge/version-0.0.15-blue.svg?cacheSeconds=2592000" /> <a href="https://www.yuque.com/tangyi-5ldnl/rzv4xd/nl8d6g6mobdgylk7?singleDoc#" target="_blank"> <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" /> </a> <a href="#" target="_blank"> <img alt="License: Apache2.0" src="https://img.shields.io/badge/License-Apache2.0-yellow.svg" /> </a> </p>
-Project Introduction
+# ExamIN
+The aim of this project is to develop a software that provides a cheat-free platform for online quizzes with complete authenticity. The system continuously monitors the movements of the candidates to prevent any possibility of cheating. It is also a proctor-free automatic environment validator, making sure that an online quiz is taken with no possibility of cheating whatsoever. This project is built using the MERN (MongoDB, Express, React, Node.js) stack.
 
-This project is an efficient teaching management platform built with Spring Boot and Vue, designed for seamless usability and aesthetic experience. It integrates a multi-tenant architecture with granular permission control, covering core features such as online exams, daily practice, and interactive learning.
+## Features
+### Teacher/Admin Panel Features
+* Assign quizzes to individual classes
+* Add questions to the quizzes
+* View results dashboard
+* Monitor the proctoring logs to ensure authenticity of the test
+### Student Panel Features
+* Take quizzes assigned by the teacher
+* View results and analyze their performance through visualizations provided
+### Object Detection
+* The project uses the CocoSSD model using TensorFlow API for object detection.
+* The model detects mobile, multiple persons, book, laptop, and person not found.
+* The system also disables right-click and detects tab switch, Ctrl key press, and Alt key press.
+### Real-Time Video Stream
+* The system uses React Webcam to send real-time video stream to the CocoSSD model for object detection.
+* This feature helps to enhance the accuracy and reliability of the object detection system.
+### Installation
+* Clone the repository from GitHub.
+* Navigate to the root directory of the project in the terminal.
+* npm install and npm start.
+* cd client
+* cd esm-client
+* npm install and npm start
+### Technologies Used
+* MERN (MongoDB, Express, React, Node.js) stack
+* TensorFlow API
+* CocoSSD object detection model
 
-Diversified Learning Experience: Supports rich media formats including text, images, and videos. Users can switch flexibly between exam and practice modes, with additional questionnaire capabilities to comprehensively evaluate learning outcomes.
+### Images
+* SignUP page
 
-Innovative Question Types: Includes single-choice, multiple-choice, true/false, short answer, and multimedia questions (video, audio). All content supports images and video to enhance engagement and interactivity.
+![image](https://user-images.githubusercontent.com/73771450/233161489-33b8d19c-1469-467c-b12d-c90176038b9c.png)
 
-Lightweight Deployment & Continuous Iteration: This version minimizes middleware dependencies and simplifies deployment. We ensure ongoing updates to keep pace with advancements in educational technology.
+* Student Dashboard
 
-Feature Demonstration
-Frontend & Admin Panel
-Platform	Access Link	Account & Password
-Frontend	Visit Frontend
-	Account: preview, Password: 123456
-Admin Panel	Visit Backend
-	Tenant Account: preview, Password: 123456
-WeChat Official Account & H5
-Platform	QR Code	Description
-WeChat OA	<img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/wxapp.jpeg" height="130"/>	Provides deployment docs, source code analysis, and articles
-H5	<img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/h5.png" width="130"/>	H5 version
-Feature Overview
-<img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/business.png" width="600"/>
+![image](https://user-images.githubusercontent.com/73771450/233161641-12de8a06-4cee-4e7a-9eda-a66fcb5bc2d3.png)
 
-This project integrates the Web frontend, backend management system, and H5 client to deliver a smooth online learning and examination experience.
+* Attempt Test
 
-Web Frontend Highlights: Focused on online learning and testing. Users can participate in exams, study courses, and practice exercises with high interactivity.
+![image](https://user-images.githubusercontent.com/73771450/233161752-cef955d5-11ed-4e25-b84f-c6af19c48dbc.png)
 
-H5 Client: Lightweight yet powerful, enabling users to take exams anytime, anywhere.
+* Test Instruction Page
 
-Admin Panel: Includes comprehensive education operations management tools:
+![image](https://user-images.githubusercontent.com/73771450/233161861-fc5ab08c-e79a-4ea4-b3e9-2f6a3d244df7.png)
 
-System Configuration: Manage units, users, departments, roles, menus, and logs. Includes automatic code generation for faster development.
+* Test Page
 
-Exam Administration: Full workflow from course creation to exam grading with efficient management of courses, exam papers, question banks, and scores.
+![image](https://user-images.githubusercontent.com/73771450/233161928-9cb879bc-8035-4d7c-a2ad-76bb74051ce4.png)
 
-Course Features: Courses can be organized into chapters and knowledge points with support for text, images, and videos.
+* Tab Switch detected
 
-Flexible Exam Options:
+![image](https://user-images.githubusercontent.com/73771450/233162045-2c9d5f31-a882-4639-9599-103743f382ae.png)
 
-Exam Modes: Supports exams, practice, questionnaires, sequential or one-time answering, timed exams, and more.
+* Cell phone detected
 
-Smart Question Bank: Add questions manually, pick from the bank, or auto-generate papers randomly.
+![image](https://user-images.githubusercontent.com/73771450/233162097-49d342ab-785d-494c-8fb0-f62f968021ee.png)
 
-Enhanced User Interaction: Users can bookmark courses, questions, and exams, and can freely choose topics for targeted practice.
+* Multi Person Detected 
 
-System Architecture
-<img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/framework.png" width="600"/>
-Deployment Guide, User Manual, Source Code Analysis & Video Tutorials
+![image](https://user-images.githubusercontent.com/73771450/233162252-c1f3fd72-1ec8-4f39-994e-8b61b2a6feb6.png)
 
-How to Obtain: Follow the WeChat public account “小傻笔记” and send the keyword “文档”.
+* Face not visible
 
-<img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/wxapp.jpeg" height="130"/>
+![image](https://user-images.githubusercontent.com/73771450/233162571-a10cfda6-d9ec-49f2-9ffe-5420ba72f097.png)
 
-Roadmap
+* Attempted Test Page
 
-Open Source User Registration
+![image](https://user-images.githubusercontent.com/73771450/233162657-7dc3dd71-1737-4c89-81de-823f32f1a26e.png)
 
-Feature Screenshots
-<table> <tr> <td><img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/web_courses.png" height="200"/></td> <td><img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/web_course_detail.png" height="200"/></td> </tr> <tr> <td><img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/web_course_chapter.png" height="200"/></td> <td><img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/web_course_section.png" height="200"/></td> </tr> <tr> <td><img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/admin_course_evaluate.png" height="200"/></td> <td><img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/web_1.png" height="200"/></td> </tr> <tr> <td><img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/admin_course_evaluate.png" height="200"/></td> <td><img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/admin_dashboard.png" height="200"/></td> </tr> <tr> <td><img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/admin_exam_manage.png" height="200"/></td> <td><img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/admin_subjects.png" height="200"/></td> </tr> <tr> <td><img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/admin_subject_detail.png" height="200"/></td> <td><img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/admin_courses.png" height="200"/></td> </tr> <tr> <td><img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/admin_score_detail.png" height="200"/></td> <td><img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/admin_menus.png" height="200"/></td> </tr> <tr> <td> <img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/wxapp_1.png" height="200"/> <img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/wxapp_2.png" height="200"/> <img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/wxapp_3.png" height="200"/> <img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/wxapp_6.png" height="200"/> <img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/wxapp_7.png" height="200"/> </td> <td> <img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/monitor_1.png" height="200"/> </td> </tr> </table>
-Contribution
+* Result View (Student)
 
-Contributions are welcome. Feel free to submit PRs or issues
- to help improve the project.
+![image](https://user-images.githubusercontent.com/73771450/233162751-5492126b-a00e-4c39-85a1-a8fd6378af9c.png)
 
-👤 Author
+* Create Test Page
 
-Gitee: @wells2333
+![image](https://user-images.githubusercontent.com/73771450/233162898-1ebf2858-fff3-4273-b67b-161327278ef0.png)
 
-GitHub: @wells2333
+![image](https://user-images.githubusercontent.com/73771450/233162940-273d6474-8562-4d39-bf0f-52b43f66ccd3.png)
 
-WeChat Group
-<img src="https://yunmianshi.com.cn/storage/yunmianshi/static/wx_sg.png" width="130"/>
-QQ Groups
-<img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/qq.png" width="130"/> <img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/qq_new.png" width="130"/> <img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/qq_3.png" width="130"/> <img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/qq_4.png" width="130"/>
-Support the Author
+* Student Logs and results 
 
-If this project helps you, please click the ⭐ "Star" button, or scan the WeChat QR code below to support the author.
-
-<img src="https://gitee.com/wells2333/sg-exam/raw/master/docs/images/wechat.png" width="130"/>
-License
-
-This project is licensed under the Apache License 2.0
-.
+![image](https://user-images.githubusercontent.com/73771450/233163016-cb254c90-d512-42c1-8adc-da72abfe57d1.png)
